@@ -1,0 +1,7 @@
+beautifulsoup4
+elasticsearch
+nltk
+requests
+textblob
+tweepy
+vaderSentiment
