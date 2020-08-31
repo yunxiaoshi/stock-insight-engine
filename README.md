@@ -4,13 +4,13 @@
 ![MIT License](https://img.shields.io/badge/License-MIT-brightgreen)
 ![Elasticsearch 7.9.0](https://img.shields.io/badge/Elasticsearch-7.9.0-yellow)
 
-Stock insight engine is a stock market analyzer that mines user tweets on Twitter and performs sentiment analysis on them to show how much emotions on Twitter affect the stock prices. It is built upon ![tweepy](https://www.tweepy.org/), ![Elasticsearch](https://www.elastic.co/elasticsearch/) and ![NLTK](https://www.nltk.org/). 
+Stock insight engine is a stock market analyzer that mines user tweets on Twitter and performs sentiment analysis on them to show how much emotions on Twitter affect the stock prices. It is built upon [tweepy](https://www.tweepy.org/), [Elasticsearch](https://www.elastic.co/elasticsearch/) and [NLTK](https://www.nltk.org/). 
 
 ## Installation
 
 To be able to use stock insight engine to mine tweets from Twitter, there are a few steps need to be done. Namely, 
 
-1. Apply for a Twitter developer account ![here](https://developer.twitter.com/en/apply-for-access), then ![create a new Twitter application](https://developer.twitter.com/en/docs/basics/developer-portal/guides/apps.html) and generate your ![access credentials](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html)
+1. Apply for a Twitter developer account [here](https://developer.twitter.com/en/apply-for-access), then [create a new Twitter application](https://developer.twitter.com/en/docs/basics/developer-portal/guides/apps.html) and generate your [access credentials](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html)
 
 2. Install Elasticsearch on your local machine. The following has been tested on Ubuntu 20.04
 
@@ -47,7 +47,7 @@ To be able to use stock insight engine to mine tweets from Twitter, there are a 
 
 4. Install Python dependancies
 
-    It is recommended to use ![conda](https://docs.conda.io/en/latest/) to manage your env. For example do
+    It is recommended to use [conda](https://docs.conda.io/en/latest/) to manage your env. For example do
 
     ```
     conda create -n stock python=3.8
@@ -68,12 +68,12 @@ To be able to use stock insight engine to mine tweets from Twitter, there are a 
 
     ```python get_tweet_sentiment.py -s AMZN -k 'Jeff Bezos',Bezos,Amazon,Alexa,'Blue Origin' -l --quiet```
 
-4. To get Amazon stock price from ![yahoo finance](https://finance.yahoo.com/quote/AMZN/?p=AMZN), 
+4. To get Amazon stock price from [yahoo finance](https://finance.yahoo.com/quote/AMZN/?p=AMZN), 
     ```python get_stockprice.py -s AMZN --quiet```
 
 ## Visualization
 
-Follow ![Kibana Visualization Tutorial](https://www.elastic.co/guide/en/kibana/current/tutorial-visualizing.html) to customize your data visualizations. Here I showcase mine as an illustration.
+Follow [Kibana Visualization Tutorial](https://www.elastic.co/guide/en/kibana/current/tutorial-visualizing.html) to customize your data visualizations. Here I showcase mine as an illustration.
 <p align="center">
 <img src="./images/dashboard.png">
 </p>
