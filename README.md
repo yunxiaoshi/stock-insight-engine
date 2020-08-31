@@ -62,13 +62,16 @@ To be able to use stock insight engine to mine tweets from Twitter, there are a 
 2. Edit the ```nltk_tokens_required``` and ```nltk_tokens_ignored``` in ```config.py``` to the Twitter feeds you want to mine. ```nltk_tokens_required``` means 
     the tweets being mined must contain at least one of the tokens in ```nltk_tokens_required``` before being added to Elasticsearch otherwise skipped, and ```nltk_tokens_ignored``` means that if a tweet contains one of the ignored tokens then it will be skipped (not adding to Elasticsearch). The number required tokens can be set in ```nltk_min_required```.
 
-3. To mine tweets talking about ```Amazon``` and ```Jeff Bezos```, do
-    ```python get_tweet_sentiment.py -s AMZN -k 'Jeff Bezos',Bezos,Amazon,Alexa,'Blue Origin' --quiet```
+3. To mine tweets talking about ```Amazon``` and ```Jeff Bezos```, do  
+
+    ```python get_tweet_sentiment.py -s AMZN -k 'Jeff Bezos',Bezos,Amazon,Alexa,'Blue Origin' --quiet```  
+
     and to further follow URL links in tweets to perform sentiment analysis on that page
 
     ```python get_tweet_sentiment.py -s AMZN -k 'Jeff Bezos',Bezos,Amazon,Alexa,'Blue Origin' -l --quiet```
 
-4. To get Amazon stock price from [yahoo finance](https://finance.yahoo.com/quote/AMZN/?p=AMZN), 
+4. To get Amazon stock price from [yahoo finance](https://finance.yahoo.com/quote/AMZN/?p=AMZN), do
+
     ```python get_stockprice.py -s AMZN --quiet```
 
 ## Visualization
