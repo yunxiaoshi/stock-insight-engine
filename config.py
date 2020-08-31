@@ -12,11 +12,11 @@ nltk_min_tokens = 1
 elasticsearch_host = "localhost"
 elasticsearch_port = 9200
 
-# twitter access tokens
-consumer_key = "DAWNpchJ1N7D16QShvBQ6vQ1E"
-consumer_key_secret = "RKD3FZ2kTw8b7vXjg6U2GNdZ7LMjZgPMENFOKdXjNDhwtjvNFA"
-access_token = "1216093106-j2WqgiLWcjEzHLHt4q88PFHUVOfl1Ge1prhUJAj"
-access_token_secret = "YN47wTGnnDnXdU1HF2Tgok6nyZLBBs7jN5l4gKZWdpwcw"
+# put your twitter access credentials here
+consumer_key = ""
+consumer_key_secret = ""
+access_token = ""
+access_token_secret = ""
 
 # sentiment url
 sentiment_url = 'http://text-processing.com/api/sentiment/'
