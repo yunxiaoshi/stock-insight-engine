@@ -8,7 +8,7 @@ Stock insight engine is a stock market analyzer that mines user tweets on Twitte
 
 ## Installation
 
-To be able to use stock insight engine to mine tweets from Twitter, there are a few steps need to be done. Namely, 
+To be able to use stock insight engine to mine tweets from Twitter, there are a few steps need to be donei first. Namely, 
 
 1. Apply for a Twitter developer account [here](https://developer.twitter.com/en/apply-for-access), then [create a new Twitter application](https://developer.twitter.com/en/docs/basics/developer-portal/guides/apps.html) and generate your [access credentials](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html)
 
@@ -31,7 +31,7 @@ To be able to use stock insight engine to mine tweets from Twitter, there are a 
     ```
     curl -X GET 'http://localhost:9200'
     ```
-    which will you give you some snapshot information about the installed Elasticsearch. 
+    which should give you some snapshot information about the installed Elasticsearch. 
 
 3. Install Kibana. If your Elasticsearch installation is successful, then you just need to do 
     
@@ -59,8 +59,11 @@ To be able to use stock insight engine to mine tweets from Twitter, there are a 
 
 1. Put **your** Twitter consumer key and access token in ```config.py```.
 
-2. Edit the ```nltk_tokens_required``` and ```nltk_tokens_ignored``` in ```config.py``` to the Twitter feeds you want to mine. ```nltk_tokens_required``` means 
-    the tweets being mined must contain at least one of the tokens in ```nltk_tokens_required``` before being added to Elasticsearch otherwise skipped, and ```nltk_tokens_ignored``` means that if a tweet contains one of the ignored tokens then it will be skipped (not adding to Elasticsearch). The number required tokens can be set in ```nltk_min_required```.
+2. Edit the ```nltk_tokens_required``` and ```nltk_tokens_ignored``` in ```config.py``` to the Twitter feeds you want to mine.  
+    
+    + ```nltk_tokens_required``` specifies the must-have tokens in a tweet, of which the tweet must contain at least one before being added to Elasticsearch otherwise skipped, and 
+    + ```nltk_tokens_ignored``` specifies the ignored tokens, of which if a tweet contains any then it will be skipped, not adding to elasticsearch.
+    + ```nltk_min_required``` sets the minimum number of required tokens.
 
 3. To mine tweets talking about ```Amazon``` and ```Jeff Bezos```, do  
 
