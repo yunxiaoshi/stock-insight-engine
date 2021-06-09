@@ -1,8 +1,8 @@
 ## Stock Insight Engine
 
-![Python 3.6+](https://img.shields.io/badge/Python-3.6%2B-blue)
-![MIT License](https://img.shields.io/badge/License-MIT-brightgreen)
-![Elasticsearch 7.9.0](https://img.shields.io/badge/Elasticsearch-7.9.0-yellow)
+[![Python 3.6+](https://img.shields.io/badge/Python-3.6%2B-blue)](https://www.python.org/)
+[![MIT License](https://img.shields.io/badge/License-MIT-brightgreen)](./LICENSE)
+[![Elasticsearch 7.9.0](https://img.shields.io/badge/Elasticsearch-7.9.0-yellow)](https://www.elastic.co/elasticsearch/)
 
 Stock insight engine is a stock market analyzer that mines user tweets on Twitter and performs sentiment analysis on them to show how much emotions on Twitter affect the stock prices. It is built upon [tweepy](https://www.tweepy.org/), [Elasticsearch](https://www.elastic.co/elasticsearch/) and [NLTK](https://www.nltk.org/). 
 
